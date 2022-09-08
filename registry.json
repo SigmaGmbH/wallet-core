@@ -2746,14 +2746,20 @@
     "id": "secretnetwork",
     "name": "SecretNetwork",
     "displayName": "Secret Network",
-    "coinId": 529,
+    "coinId": 10000529,
     "symbol": "SCRT",
     "decimals": 6,
     "blockchain": "Cosmos",
-    "derivationPath": "m/44'/529'/0'/0/0",
+    "derivation": [
+      {
+        "path": "m/44'/529'/0'/0/0"
+      }
+    ],
     "curve": "secp256k1",
     "publicKeyType": "secp256k1",
     "hrp": "secret",
+    "chainId": "secret-4",
+    "addressHasher": "sha256ripemd",
     "explorer": {
       "url": "https://secretnodes.com/secret/chains/secret-4",
       "txPath": "/transactions/",
