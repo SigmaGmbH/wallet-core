@@ -1,4 +1,4 @@
-// Copyright © 2017-2021 Trust Wallet.
+// Copyright © 2017-2022 Trust Wallet.
 //
 // This file is part of Trust. The full Trust copyright notice, including
 // terms governing use, modification, and redistribution, is contained in the
@@ -6,15 +6,14 @@
 
 #include "Cosmos/Address.h"
 #include "Cosmos/Signer.h"
-#include "proto/Cosmos.pb.h"
 #include "HexCoding.h"
-#include "PrivateKey.h"
 #include "PublicKey.h"
+#include "proto/Cosmos.pb.h"
+#include "../interface/TWTestUtilities.h"
 
 #include <gtest/gtest.h>
 
-using namespace TW;
-using namespace TW::Cosmos;
+namespace TW::Cosmos::tests {
 
 TEST(SecretNetworkSigner, SignTransfer) {
     auto input = Proto::SigningInput();
@@ -35,18 +34,18 @@ TEST(SecretNetworkSigner, SignTransfer) {
     message.set_to_address(toAddress.string());
     auto amountOfTx = message.add_amounts();
     amountOfTx->set_denom("uscrt");
-    amountOfTx->set_amount(100000 - 200);
+    amountOfTx->set_amount("99800");
 
     auto& fee = *input.mutable_fee();
     fee.set_gas(200000);
     auto amountOfFee = fee.add_amounts();
     amountOfFee->set_denom("uscrt");
-    amountOfFee->set_amount(200);
+    amountOfFee->set_amount("200");
 
     auto privateKey = parse_hex("d5be662dff3364eeb69b2bb04be43de2b7bd441871390420882d30fdea122af2");
     input.set_private_key(privateKey.data(), privateKey.size());
 
-    auto output = Signer::sign(input);
+    auto output = Signer::sign(input, TWCoinTypeSecretNetwork);
 
     // curl -H 'Content-Type: application/json' --data-binary '{"tx_bytes": "Co0B...rYVj", "mode": "BROADCAST_MODE_BLOCK"}' https://lcd-secret.keplr.app/cosmos/tx/v1beta1/txs
 
@@ -55,3 +54,5 @@ TEST(SecretNetworkSigner, SignTransfer) {
     EXPECT_EQ(output.error(), "");
     EXPECT_EQ(output.json(), "");
 }
+
+} // namespace TW::Cosmos::tests

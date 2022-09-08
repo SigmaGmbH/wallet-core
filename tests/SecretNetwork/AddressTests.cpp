@@ -1,4 +1,4 @@
-// Copyright © 2017-2021 Trust Wallet.
+// Copyright © 2017-2022 Trust Wallet.
 //
 // This file is part of Trust. The full Trust copyright notice, including
 // terms governing use, modification, and redistribution, is contained in the
@@ -6,13 +6,12 @@
 
 #include "Cosmos/Address.h"
 #include "HexCoding.h"
-#include "PublicKey.h"
 #include "PrivateKey.h"
+#include "PublicKey.h"
 #include <gtest/gtest.h>
 #include <vector>
 
-using namespace TW;
-using namespace TW::Cosmos;
+namespace TW::Cosmos::tests {
 
 TEST(SecretNetworkAddress, Valid) {
     EXPECT_TRUE(Address::isValid(TWCoinTypeSecretNetwork, "secret19y0n2ru9dae9w6vt7fwgfptp5nxq3hwtsz4u75"));
@@ -43,3 +42,5 @@ TEST(SecretNetworkAddress, FromString) {
     EXPECT_EQ(address.string(), "secret1kc3629yhu93s8c3gv3sylzdtr4fqzmgqxexc2z");
     EXPECT_EQ(hex(address.getKeyHash()), "b623a51497e16303e22864604f89ab1d52016d00");
 }
+
+} // namespace TW::Cosmos::tests

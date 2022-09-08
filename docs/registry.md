@@ -50,7 +50,6 @@ This list is generated from [./registry.json](../registry.json)
 | 500     | Theta            | THETA  | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/theta/info/logo.png" width="32" />        | <https://www.thetatoken.org>  |
 | 501     | Solana           | SOL    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/solana/info/logo.png" width="32" />       | <https://solana.com>          |
 | 508     | Elrond           | eGLD   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/elrond/info/logo.png" width="32" />       | <https://elrond.com/>         |
-| 529     | SecretNetwork    | SCRT   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/secretnetwork/info/logo.png" width="32" />| <https://scrt.network/>       |
 | 714     | BNB Beacon Chain | BNB    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/binance/info/logo.png" width="32" />      | <https://binance.org>         |
 | 818     | VeChain          | VET    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/vechain/info/logo.png" width="32" />      | <https://vechain.org>         |
 | 820     | Callisto         | CLO    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/callisto/info/logo.png" width="32" />     | <https://callisto.network>    |
@@ -83,6 +82,7 @@ This list is generated from [./registry.json](../registry.json)
 | 10000288 | Boba             | BOBAETH | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/boba/info/logo.png" width="32" />         | <https://boba.network/>       |
 | 10000321 | KuCoin Community Chain | KCS    | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/kcc/info/logo.png" width="32" />          | <https://www.kcc.io/>         |
 | 10000330 | Terra            | LUNA   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/terrav2/info/logo.png" width="32" />      | <https://terra.money>         |
+| 10000529 | Secret Network   | SCRT   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/secretnetwork/info/logo.png" width="32" /> | <https://scrt.network/>       |
 | 10000553 | Huobi ECO Chain  | HT     | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/heco/info/logo.png" width="32" />         | <https://www.hecochain.com/en-us> |
 | 10001088 | Metis            | METIS  | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/metis/info/logo.png" width="32" />        | <https://www.metis.io/>       |
 | 10001284 | Moonbeam         | GLMR   | <img src="https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/moonbeam/info/logo.png" width="32" />     | <https://moonbeam.network>    |

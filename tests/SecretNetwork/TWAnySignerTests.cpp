@@ -4,16 +4,15 @@
 // terms governing use, modification, and redistribution, is contained in the
 // file LICENSE at the root of the source code distribution tree.
 
-#include <TrustWalletCore/TWAnySigner.h>
-#include "HexCoding.h"
 #include "Cosmos/Address.h"
+#include "HexCoding.h"
 #include "proto/Cosmos.pb.h"
+#include <TrustWalletCore/TWAnySigner.h>
 
 #include "../interface/TWTestUtilities.h"
 #include <gtest/gtest.h>
 
-using namespace TW;
-using namespace TW::Cosmos;
+namespace TW::Cosmos::tests {
 
 TEST(TWAnySignerSecretNetwork, Sign) {
     auto privateKey = parse_hex("d5be662dff3364eeb69b2bb04be43de2b7bd441871390420882d30fdea122af2");
@@ -36,13 +35,13 @@ TEST(TWAnySignerSecretNetwork, Sign) {
     message.set_to_address(toAddress.string());
     auto amountOfTx = message.add_amounts();
     amountOfTx->set_denom("uscrt");
-    amountOfTx->set_amount(100000 - 200);
+    amountOfTx->set_amount("99800");
 
     auto& fee = *input.mutable_fee();
     fee.set_gas(200000);
     auto amountOfFee = fee.add_amounts();
-    amountOfFee->set_denom("uscrt");
-    amountOfFee->set_amount(200);
+    amountOfFee->set_denom("uosmo");
+    amountOfFee->set_amount("200");
 
     Proto::SigningOutput output;
     ANY_SIGN(input, TWCoinTypeSecretNetwork);
@@ -52,3 +51,5 @@ TEST(TWAnySignerSecretNetwork, Sign) {
     EXPECT_EQ(output.json(), "");
     EXPECT_EQ(output.error(), "");
 }
+
+} // namespace TW::Cosmos::tests
