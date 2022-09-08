@@ -2741,5 +2741,31 @@
       "rpc": "https://exchainrpc.okex.org",
       "documentation": "https://okc-docs.readthedocs.io/en/latest"
     }
+  },
+  {
+    "id": "secretnetwork",
+    "name": "SecretNetwork",
+    "displayName": "Secret Network",
+    "coinId": 529,
+    "symbol": "SCRT",
+    "decimals": 6,
+    "blockchain": "Cosmos",
+    "derivationPath": "m/44'/529'/0'/0/0",
+    "curve": "secp256k1",
+    "publicKeyType": "secp256k1",
+    "hrp": "secret",
+    "explorer": {
+      "url": "https://secretnodes.com/secret/chains/secret-4",
+      "txPath": "/transactions/",
+      "accountPath": "/accounts/",
+      "sampleTx": "68B1B3255AA4F053896E00F1DDC8827BD0B41B69F83ECE6FAFA95F92AD8EFF38",
+      "sampleAccount": "secret1vx54g93k5udjzh98gk2xh0ed902eqgyg23wjza"
+    },
+    "info": {
+      "url": "https://scrt.network/",
+      "client": "https://github.com/scrtlabs/SecretNetwork",
+      "clientPublic": "https://rpc-secret.keplr.app",
+      "clientDocs": ""
+    }
   }
 ]

@@ -35,6 +35,7 @@ TEST(TWHRP, StringForHRP) {
     ASSERT_STREQ(stringForHRP(TWHRPTHORChain), "thor");
     ASSERT_STREQ(stringForHRP(TWHRPCryptoOrg), "cro");
     ASSERT_STREQ(stringForHRP(TWHRPOsmosis), "osmo");
+    ASSERT_STREQ(stringForHRP(TWHRPSecretNetwork), "secret");
 }
 
 TEST(TWHRP, HRPForString) {
@@ -61,6 +62,7 @@ TEST(TWHRP, HRPForString) {
     ASSERT_EQ(hrpForString("bluzelle"), TWHRPBluzelle);
     ASSERT_EQ(hrpForString("cro"), TWHRPCryptoOrg);
     ASSERT_EQ(hrpForString("osmo"), TWHRPOsmosis);
+    ASSERT_EQ(hrpForString("secret"), TWHRPSecretNetwork);
     ASSERT_EQ(hrpForString("ecash"), TWHRPECash);
 }
 
@@ -87,6 +89,7 @@ TEST(TWHPR, HPRByCoinType) {
     ASSERT_EQ(TWHRPTHORChain, TWCoinTypeHRP(TWCoinTypeTHORChain));
     ASSERT_EQ(TWHRPCryptoOrg, TWCoinTypeHRP(TWCoinTypeCryptoOrg));
     ASSERT_EQ(TWHRPOsmosis, TWCoinTypeHRP(TWCoinTypeOsmosis));
+    ASSERT_EQ(TWHRPSecretNetwork, TWCoinTypeHRP(TWCoinTypeSecretNetwork));
     ASSERT_EQ(TWHRPECash, TWCoinTypeHRP(TWCoinTypeECash));
 
     ASSERT_EQ(TWHRPUnknown, TWCoinTypeHRP(TWCoinTypeAion));

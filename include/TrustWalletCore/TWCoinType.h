@@ -99,6 +99,7 @@ enum TWCoinType {
     TWCoinTypeCelo = 52752,
     TWCoinTypeRonin = 10002020,
     TWCoinTypeOsmosis = 10000118,
+    TWCoinTypeSecretNetwork = 529,
     TWCoinTypeECash = 899,
     TWCoinTypeCronosChain = 10000025,
     TWCoinTypeSmartBitcoinCash = 10000145,
