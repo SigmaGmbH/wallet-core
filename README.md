@@ -6,15 +6,15 @@ It is a core part of the popular [Trust Wallet](https://trustwallet.com), and so
 Most of the code is C++ with a set of strict C interfaces, and idiomatic interfaces for supported languages:
 Swift for iOS and Java (Kotlin) for Android.
 
-![iOS CI](https://github.com/trustwallet/wallet-core/workflows/iOS%20CI/badge.svg)
-![Android CI](https://github.com/trustwallet/wallet-core/workflows/Android%20CI/badge.svg)
-![Linux CI](https://github.com/trustwallet/wallet-core/workflows/Linux%20CI/badge.svg)
-![Wasm CI](https://github.com/trustwallet/wallet-core/workflows/Wasm%20CI/badge.svg)
-![Docker CI](https://github.com/trustwallet/wallet-core/workflows/Docker%20CI/badge.svg)
+![iOS CI](https://github.com/SigmaGmbH/wallet-core/workflows/iOS%20CI/badge.svg)
+![Android CI](https://github.com/SigmaGmbH/wallet-core/workflows/Android%20CI/badge.svg)
+![Linux CI](https://github.com/SigmaGmbH/wallet-core/workflows/Linux%20CI/badge.svg)
+![Wasm CI](https://github.com/SigmaGmbH/wallet-core/workflows/Wasm%20CI/badge.svg)
+![Docker CI](https://github.com/SigmaGmbH/wallet-core/workflows/Docker%20CI/badge.svg)
 
-[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/trustwallet/wallet-core)
-![GitHub](https://img.shields.io/github/license/TrustWallet/wallet-core.svg)
-![GitHub release (latest by date)](https://img.shields.io/github/v/release/trustwallet/wallet-core)
+[![Gitpod Ready-to-Code](https://img.shields.io/badge/Gitpod-ready--to--code-blue?logo=gitpod)](https://gitpod.io/#https://github.com/SigmaGmbH/wallet-core)
+![GitHub](https://img.shields.io/github/license/sigmagmbh/wallet-core.svg)
+![GitHub release (latest by date)](https://img.shields.io/github/v/release/sigmagmbh/wallet-core)
 ![SPM](https://img.shields.io/badge/SPM-ready-blue)
 ![Cocoapods](https://img.shields.io/cocoapods/v/TrustWalletCore.svg)
 
@@ -38,7 +38,7 @@ If you want to use wallet core in your project follow these instructions.
 
 ## Android
 
-Android releases are hosted on [GitHub packages](https://github.com/trustwallet/wallet-core/packages/700258), please checkout [this installation guide](https://docs.github.com/en/packages/guides/configuring-gradle-for-use-with-github-packages#installing-a-package), you need to add GitHub access token to install it.
+Android releases are hosted on [GitHub packages](https://github.com/SigmaGmbH/wallet-core/packages/700258), please checkout [this installation guide](https://docs.github.com/en/packages/guides/configuring-gradle-for-use-with-github-packages#installing-a-package), you need to add GitHub access token to install it.
 
 Add this dependency to build.gradle and run `gradle install`
 
@@ -51,7 +51,7 @@ dependencies {
     implementation 'com.trustwallet:wallet-core:x.y.z'
 }
 ```
-Replace x.y.z with latest version: ![GitHub release (latest by date)](https://img.shields.io/github/v/release/trustwallet/wallet-core)
+Replace x.y.z with latest version: ![GitHub release (latest by date)](https://img.shields.io/github/v/release/sigmagmbh/wallet-core)
 
 ## iOS
 
@@ -59,7 +59,7 @@ We currently support Swift Package Manager and CocoaPods (will discontinue in th
 
 ### SPM
 
-Download latest `Package.swift` from [GitHub Releases](https://github.com/trustwallet/wallet-core/releases) and put it in a local `WalletCore` folder.
+Download latest `Package.swift` from [GitHub Releases](https://github.com/SigmaGmbH/wallet-core/releases) and put it in a local `WalletCore` folder.
 
 Add this line to the `dependencies` parameter in your `Package.swift`:
 
@@ -70,7 +70,7 @@ Add this line to the `dependencies` parameter in your `Package.swift`:
 Or add remote url + `master` branch, it points to recent (not always latest) binary release.
 
 ```swift
-.package(name: "WalletCore", url: "https://github.com/trustwallet/wallet-core", .branchItem("master")),
+.package(name: "WalletCore", url: "https://github.com/SigmaGmbH/wallet-core", .branchItem("master")),
 ```
 
 Then add libraries to target's `dependencies`: 
@@ -96,7 +96,7 @@ npm install @trustwallet/wallet-core
 
 ## Go (beta)
 
-Please check out the [Go integration sample](https://github.com/trustwallet/wallet-core/tree/master/samples/go).
+Please check out the [Go integration sample](https://github.com/SigmaGmbH/wallet-core/tree/master/samples/go).
 
 
 # Projects
@@ -122,12 +122,12 @@ There are a few community-maintained projects that extend Wallet Core to some ad
 
 # Contributing
 
-The best way to submit feedback and report bugs is to [open a GitHub issue](https://github.com/trustwallet/wallet-core/issues/new).
+The best way to submit feedback and report bugs is to [open a GitHub issue](https://github.com/SigmaGmbH/wallet-core/issues/new).
 If you want to contribute code please see [Contributing](https://developer.trustwallet.com/wallet-core/contributing).
 If you want to add support for a new blockchain also see [Adding Support for a New Blockchain](https://developer.trustwallet.com/wallet-core/newblockchain), make sure you have read the [requirements](https://developer.trustwallet.com/wallet-core/newblockchain#requirements) section.
 
 Thanks to all the people who contribute.
-<a href="https://github.com/trustwallet/wallet-core/graphs/contributors"><img src="https://opencollective.com/wallet-core/contributors.svg?width=890&button=false" /></a>
+<a href="https://github.com/SigmaGmbH/wallet-core/graphs/contributors"><img src="https://opencollective.com/wallet-core/contributors.svg?width=890&button=false" /></a>
 
 # License
 

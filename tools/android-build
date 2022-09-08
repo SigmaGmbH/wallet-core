@@ -12,4 +12,4 @@ pushd android
 cp trustwalletcore/build/outputs/aar/trustwalletcore-release.aar ../build/trustwalletcore.aar
 popd
 
-echo "Now upload build/trustwalletcore.aar to https://github.com/TrustWallet/trust-wallet-core/releases/tag/$version"
+echo "Now upload build/trustwalletcore.aar to https://github.com/SigmaGmbH/trust-wallet-core/releases/tag/$version"

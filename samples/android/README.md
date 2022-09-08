@@ -1,9 +1,9 @@
-# Sample Android Application for [Wallet-Core](https://github.com/trustwallet/wallet-core)
+# Sample Android Application for [Wallet-Core](https://github.com/SigmaGmbH/wallet-core)
 
 ## Overview
 
 This folder contains a simple but complete **Android** sample application, for demonstrating usage of the
-[Wallet Core](https://github.com/trustwallet/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)).
+[Wallet Core](https://github.com/SigmaGmbH/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)).
 
 ## DISCLAIMER
 
@@ -23,7 +23,7 @@ and [Build Instructions](https://developer.trustwallet.com/wallet-core/building)
 
 Open in Android Studio and run. Result will appear in logs output and on device screen.
 
-The relevant source code is in [`samples/android/app/src/main/java/com/trust/walletcore/example/MainActivity.kt`](https://github.com/trustwallet/wallet-core/blob/master/samples/android/app/src/main/java/com/trust/walletcore/example/MainActivity.kt).
+The relevant source code is in [`samples/android/app/src/main/java/com/trust/walletcore/example/MainActivity.kt`](https://github.com/SigmaGmbH/wallet-core/blob/master/samples/android/app/src/main/java/com/trust/walletcore/example/MainActivity.kt).
 
 # What it Does
 

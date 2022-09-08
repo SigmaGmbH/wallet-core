@@ -469,7 +469,7 @@ TEST(WalletConsole, fileWriteRead) {
     EXPECT_TRUE(res4.find("not") != string::npos);
 }
 
-// used to fail due to incorrect public key type, see https://github.com/trustwallet/wallet-core/issues/767
+// used to fail due to incorrect public key type, see https://github.com/SigmaGmbH/wallet-core/issues/767
 TEST(WalletConsole, harmonyAddressDerivation) {
     cmd.executeLine("coin harmony");
     cmd.executeLine("newKey");

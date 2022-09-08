@@ -37,7 +37,7 @@ def self.derivation_enum_name(deriv, coin)
 end
 
 def self.coin_img(coin)
-  "<img src=\"https://raw.githubusercontent.com/trustwallet/assets/master/blockchains/#{coin}/info/logo.png\" width=\"32\" />"
+  "<img src=\"https://raw.githubusercontent.com/sigmagmbh/assets/master/blockchains/#{coin}/info/logo.png\" width=\"32\" />"
 end
 
 # Explorer urls

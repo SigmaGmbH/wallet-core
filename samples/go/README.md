@@ -1,9 +1,9 @@
-# Sample Go Integration for [Wallet-Core](https://github.com/trustwallet/wallet-core)
+# Sample Go Integration for [Wallet-Core](https://github.com/SigmaGmbH/wallet-core)
 
 ## 🔖 Overview
 
 This folder contains a small **Go** sample integration with
-[Wallet Core](https://github.com/trustwallet/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)),
+[Wallet Core](https://github.com/SigmaGmbH/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)),
 using [cgo](https://golang.org/cmd/cgo/).
 
 ## ⚠️ DISCLAIMER
@@ -39,7 +39,7 @@ and [Build Instructions](https://developer.trustwallet.com/wallet-core/building)
 
 1. Clone the wallet-core repo and go inside:
 ```shell
-git clone https://github.com/trustwallet/wallet-core.git
+git clone https://github.com/SigmaGmbH/wallet-core.git
 
 cd wallet-core
 ```

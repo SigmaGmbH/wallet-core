@@ -1,9 +1,9 @@
-# Sample C++ Application for [Wallet-Core](https://github.com/trustwallet/wallet-core)
+# Sample C++ Application for [Wallet-Core](https://github.com/SigmaGmbH/wallet-core)
 
 ## Overview
 
 This repository contains a simple but complete **C++** sample application, for demostrating usage of the
-[Wallet Core](https://github.com/trustwallet/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)).
+[Wallet Core](https://github.com/SigmaGmbH/wallet-core) library (part of [Trust Wallet](https://trustwallet.com)).
 
 ## DISCLAIMER
 
@@ -32,7 +32,7 @@ You need to [build](https://developer.trustwallet.com/wallet-core/building) the 
 Go to the **samples/cpp** folder within wallet core repo:
 
 ```shell
-git clone https://github.com/trustwallet/wallet-core.git
+git clone https://github.com/SigmaGmbH/wallet-core.git
 cd wallet-core/samples/cpp
 ```
 

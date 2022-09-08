@@ -18,14 +18,14 @@
   },
   "repository": {
     "type": "git",
-    "url": "git://github.com/trustwallet/wallet-core.git"
+    "url": "git://github.com/SigmaGmbH/wallet-core.git"
   },
   "author": "hewigovens",
   "license": "MIT",
   "bugs": {
-    "url": "https://github.com/trustwallet/wallet-core/issues"
+    "url": "https://github.com/SigmaGmbH/wallet-core/issues"
   },
-  "homepage": "https://github.com/trustwallet/wallet-core#readme",
+  "homepage": "https://github.com/SigmaGmbH/wallet-core#readme",
   "files": [
     "dist"
   ],
