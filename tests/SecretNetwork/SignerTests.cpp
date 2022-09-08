@@ -49,7 +49,7 @@ TEST(SecretNetworkSigner, SignTransfer) {
 
     // curl -H 'Content-Type: application/json' --data-binary '{"tx_bytes": "Co0B...rYVj", "mode": "BROADCAST_MODE_BLOCK"}' https://lcd-secret.keplr.app/cosmos/tx/v1beta1/txs
 
-    EXPECT_EQ(output.serialized(), "CpEBCo4BChwvY29zbW9zLmJhbmsudjFiZXRhMS5Nc2dTZW5kEm4KLXNlY3JldDFuY3Y0eDd3MDVrN3RzeDhlOTZhYzZ6ZHo4MGx3dmxod2V1ZGduYxItc2VjcmV0MTlrcDB4Y215OGdmczM0ZmN6emg0ZTYzZ2QzdTg5Y3NwdGNuNzhsGg4KBXVzY3J0EgU5OTgwMBJkCk4KRgofL2Nvc21vcy5jcnlwdG8uc2VjcDI1NmsxLlB1YktleRIjCiEC5ybzmDF8f/3D+nJghFSvhOMVx7wEA0rE1k4mScabRnoSBAoCCAESEgoMCgV1c2NydBIDMjAwEMCaDBpAOIbYTCecUVmuUOsBh1Cx99orfJsM3A0XQBCIzE6F1ixM8fPIycHUBGyCnoMgLGJQtCYj+yo9bokhba89IuQU/Q==");
+    assertJSONEqual(output.serialized(), "{\"mode\":\"BROADCAST_MODE_BLOCK\",\"tx_bytes\":\"CpEBCo4BChwvY29zbW9zLmJhbmsudjFiZXRhMS5Nc2dTZW5kEm4KLXNlY3JldDFuY3Y0eDd3MDVrN3RzeDhlOTZhYzZ6ZHo4MGx3dmxod2V1ZGduYxItc2VjcmV0MTlrcDB4Y215OGdmczM0ZmN6emg0ZTYzZ2QzdTg5Y3NwdGNuNzhsGg4KBXVzY3J0EgU5OTgwMBJkCk4KRgofL2Nvc21vcy5jcnlwdG8uc2VjcDI1NmsxLlB1YktleRIjCiEC5ybzmDF8f/3D+nJghFSvhOMVx7wEA0rE1k4mScabRnoSBAoCCAESEgoMCgV1c2NydBIDMjAwEMCaDBpAOIbYTCecUVmuUOsBh1Cx99orfJsM3A0XQBCIzE6F1ixM8fPIycHUBGyCnoMgLGJQtCYj+yo9bokhba89IuQU/Q==\"}");
     EXPECT_EQ(hex(output.signature()), "3886d84c279c5159ae50eb018750b1f7da2b7c9b0cdc0d17401088cc4e85d62c4cf1f3c8c9c1d4046c829e83202c6250b42623fb2a3d6e89216daf3d22e414fd");
     EXPECT_EQ(output.error(), "");
     EXPECT_EQ(output.json(), "");
